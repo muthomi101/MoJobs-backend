@@ -1,12 +1,10 @@
 services:
   backend:
     build:
-      context: ./backend
+      context: .
     ports:
       - "8000:8000"
     volumes:
-      - ./backend:/app
-    depends_on:
-      - db
+      - .:/app
     environment:
       - DATABASE_URL=postgres://...

@@ -12,6 +12,7 @@ class SellerProfileSerializer(serializers.ModelSerializer):
         model = SellerProfile
         fields = ['name', 'phone_number', 'location', 'is_verified', 'created_at']
         read_only_fields = ['name', 'phone_number', 'is_verified', 'created_at']
+        ref_name = "MarketplaceSellerProfile"
 
 
 # --------------------------

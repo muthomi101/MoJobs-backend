@@ -58,6 +58,7 @@ class SellerProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = SellerProfile
         fields = ['name', 'phone_number', 'location', 'is_verified', 'created_at', 'is_active']
+        ref_name = "AccountsSellerProfile"
 
 # --------------------------
 # User Serializer
